@@ -1,0 +1,132 @@
+#about {
+    padding: 120px 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif !important;
+  }
+
+#about .about-card {
+    background: lightblue;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dev-small-image {
+    border-radius: 10px;
+}
+
+.skill-icon {
+    font-size: 30px;
+}
+
+.skill-box {
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background: #fff;
+    transition: all 500ms linear;
+    cursor: pointer;
+    position: relative;
+}
+
+.skill-box::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.skill-box:active:after {
+    background: transparent;
+}
+
+.skill-box:hover:before {
+    opacity: 1;
+}
+
+.skill-box:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    color: #fff;
+}
+
+.skill-box:hover h5 {
+    font-weight: 900;
+}
+
+.skill-box:hover .skill-icon {
+    color: #fff;
+    font-weight: 900;
+}
+
+.html {
+    color: #e25f32
+}
+
+.css {
+    color: #2f49d4;
+}
+
+.js {
+    color: #cbb132;
+}
+
+.react {
+    color: #5ccfee;
+}
+
+.vue {
+    color: #53b88b;
+}
+
+.git {
+    color: #383838;
+}
+
+.bootstrap {
+    color: #703bb7;
+}
+
+.nodejs {
+    color: #3b7f3a
+}
+
+.experience-section {
+    padding: 100px 0 50px 0;
+    background: url(../../images/space-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}

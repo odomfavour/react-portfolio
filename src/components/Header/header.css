@@ -1,0 +1,23 @@
+.navbar {
+    background: transparent !important;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px !important;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.topbar_inner {
+    background-color: #fff !important;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%)   !important;
+}
+
+.hire-btn {
+    color: #fff !important;
+}

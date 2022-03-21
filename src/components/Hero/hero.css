@@ -1,0 +1,65 @@
+#home {
+    height: 100vh;
+    width: 100%;
+}
+
+.developer-background {
+    clip-path: polygon(0 100%,21% 0,100% 0,100% 100%);
+    /* position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%; */
+    background: url(../../images/girl.jpg) no-repeat;
+    height: 100vh;
+    background-position: 85% 40%;
+    background-size: cover;
+
+}
+
+.dev-info {
+    height: 100vh;
+    padding-left: 150px;
+}
+
+.dev-info h1 {
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.dev-info h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+@media (max-width: 428px) {
+    .dev-info {
+        padding-left: 15px;
+    }
+
+    .dev-info h1 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .dev-pic-section {
+        z-index: -22;
+        position: absolute;
+    }
+
+    .dev-name {
+        background: linear-gradient(45deg, #00000073, #00000073);
+        color: #fff;
+        opacity: .9;
+        
+    }
+
+    .developer-background {
+        clip-path: none;
+        width: 100%;
+    }
+
+    .dev-info h1 span {
+        -webkit-text-stroke: 1px #fff;
+    }
+}

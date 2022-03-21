@@ -1,0 +1,11 @@
+.enquiry {
+    background: linear-gradient(#000000c9, #000000c7), url(../../images/enquiry-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+.enquire {
+    height: 400px;
+    color: #fff;
+}
