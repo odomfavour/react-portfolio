@@ -1,11 +1,11 @@
 import React from 'react';
-import skillGuy from '../../images/skill.png'
+import skillGuy from '../../images/skill-1.png'
 import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaVuejs, FaJsSquare, FaGithubAlt, FaNodeJs } from 'react-icons/fa';
 const Experience = () => {
   return (
     <section className='experience-section'>
       <div className="container">
-        <h5>Skill Experience</h5>
+        <h5 className='text-white'>Skill Experience</h5>
         <div className="my-5">
           <div className="row">
             <div className="col-md-8">
@@ -77,7 +77,7 @@ const Experience = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <img src={skillGuy} alt="" className='img-fluid' />
+              <img src={skillGuy} alt="" className='img-fluid bounce' />
             </div>
           </div>
         </div>

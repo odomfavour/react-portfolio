@@ -129,7 +129,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
+                            <div className="portfolio-container portfolio-container-2">
                                 <div class="profile-wrapper">
                                     <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
                                         <h4>Pexel Clone</h4>
@@ -140,7 +140,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
+                            <div className="portfolio-container portfolio-container-3">
                                 <div class="profile-wrapper">
                                     <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
                                         <h4>Pexel Clone</h4>
@@ -151,7 +151,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
+                            <div className="portfolio-container portfolio-container-4">
                                 <div class="profile-wrapper">
                                     <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
                                         <h4>Pexel Clone</h4>
@@ -162,7 +162,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
+                            <div className="portfolio-container portfolio-container-5">
                                 <div class="profile-wrapper">
                                     <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
                                         <h4>Pexel Clone</h4>
@@ -173,7 +173,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
+                            <div className="portfolio-container portfolio-container-6">
                                 <div class="profile-wrapper">
                                     <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
                                         <h4>Pexel Clone</h4>

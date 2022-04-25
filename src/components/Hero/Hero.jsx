@@ -1,5 +1,6 @@
 import React from 'react';
 import './hero.css'
+import ogo from '../../images/ogo-new.png'
 
 const Hero = () => {
     return (
@@ -15,8 +16,8 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="col-md-6 col-12 dev-pic-section">
-                        <div className="developer-background">
-                            {/* <img src={girl} alt="the developer" className='img-fluid dev-image' /> */}
+                        <div className="developer-background pt-5 pt-lg-0">
+                            <img src={ogo} alt="the developer" className='img-fluid' />
                         </div>
                     </div>
                 </div>

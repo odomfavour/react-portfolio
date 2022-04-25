@@ -56,12 +56,16 @@
     transition: all 1s ease;
 }
 
+.portfolio-container:hover {
+    cursor: pointer;
+}
+
 .portfolio-container:hover::before {
     opacity: 0;
     transition: all 0.5s ease;
 }
 
-.portfolio-container-1::before {
+.portfolio-container-1::before, .portfolio-container-2::before, .portfolio-container-3::before, .portfolio-container-4::before, .portfolio-container-5::before, .portfolio-container-6::before {
     content: "";
     position: absolute;
     top: 0;
@@ -78,7 +82,40 @@
 }
 
 .portfolio-container-1::before {
-    background-image: url(../../images/project.png);
+    background-image: url(../../images/pexels-clone-test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.portfolio-container-2::before {
+    background-image: url(../../images/delta7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.portfolio-container-3::before {
+    background-image: url(../../images/unsplash-gallery-vue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.portfolio-container-4::before {
+    background-image: url(../../images/untitled-ui-nuxt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.portfolio-container-5::before {
+    background-image: url(../../images/country-search-challenge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.portfolio-container-6::before {
+    background-image: url(../../images/silver-lining.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
@@ -156,3 +193,13 @@
     padding: .8rem 2rem;
     border: none;
 }
+
+.bounce {
+    animation: bounce 2s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
