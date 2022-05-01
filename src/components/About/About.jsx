@@ -21,24 +21,24 @@ const About = () => {
                                     <div className="col-md-4 mb-3">
                                         <div className='about-card'>
                                             <div>
-                                            <h4 className='mb-0'>Experience</h4>
-                                            <p className='mb-0'>4 years</p>
+                                            <h6 className='mb-0'>Experience</h6>
+                                            <h5 className='mb-0 fw-bold'><span className='count'>4</span> years</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4 mb-3">
                                         <div className='about-card'>
                                             <div>
-                                                <h4 className='mb-0'>Completed</h4>
-                                                <p className='mb-0'>8 Projects</p>
+                                                <h6 className='mb-0'>Completed</h6>
+                                                <h5 className='mb-0 fw-bold'><span className='count'>8</span> Projects</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4 mb-3">
                                         <div className='about-card'>
                                             <div>
-                                            <h4 className='mb-0'>Support</h4>
-                                            <p className='mb-0'>Online 24/7</p>
+                                            <h6 className='mb-0'>Support</h6>
+                                            <h5 className='mb-0 fw-bold'>Online <span className='count'>24/7</span></h5>
                                             </div>
                                         </div>
                                     </div>

@@ -8,10 +8,11 @@ import Hero from '../components/Hero/Hero';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Work from '../components/Work/Work';
+import PageWrapper from '../layout/PageWrapper/PageWrapper';
 
 const index = () => {
   return (
-      <div>
+      <PageWrapper>
           <Header/>
           <Hero/>
           <About/>
@@ -21,7 +22,7 @@ const index = () => {
           <Testimonials/>
           <Contact/>
           <Footer/>
-      </div>
+      </PageWrapper>
   );
 };
 

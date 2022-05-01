@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SmallModal from '../SmallModal/SmallModal';
 import './portfolio.css'
+import { projects } from './portfolioData';
 // import girl from '../../images/girly.jpg'
 
 
@@ -9,7 +10,7 @@ const Portfolio = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <section className='portfolio'>
+        <section className='portfolio' id="portfolio">
             <div className="container">
                 <div className="heading d-flex justify-content-between align-items-baseline mb-5">
                     <div>
@@ -117,72 +118,23 @@ const Portfolio = () => {
                         </div>
                     </div> */}
                     <div className="row">
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-1">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn' onClick={handleShow}>View Design</button>
+                        {projects.map((item) => (
+                            <div className="col-md-4 mb-4" key={item.id}>
+                                <div className={`portfolio-container portfolio-container-${item.id}`}>
+                                    <div class="profile-wrapper">
+                                        <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
+                                            <h4>{item.name}</h4>
+                                            <p>{item.description}</p>
+                                            <p className='fw-bold text-success'>{item.stack}</p>
+                                            <a href={item.link} target="_blank" rel='noreferrer' className='view-project-btn'>View Website</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-2">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn'>View Design</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-3">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn'>View Design</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-4">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn'>View Design</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-5">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn'>View Design</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="portfolio-container portfolio-container-6">
-                                <div class="profile-wrapper">
-                                    <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">
-                                        <h4>Pexel Clone</h4>
-                                        <p>A clone of the pexel application. Users can search for images </p>
-                                        <button className='view-project-btn'>View Design</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
+                    </div>
+                    <div className="d-flex my-3 justify-content-end">
+                        <button className="btn btn-primary">See more</button>
                     </div>
                     <SmallModal show={show} handleClose={handleClose} />
                 </div>

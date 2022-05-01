@@ -21,3 +21,9 @@
 .hire-btn {
     color: #fff !important;
 }
+
+@media(max-width: 427px) {
+    .navbar {
+        background: #fff !important;
+    }
+}

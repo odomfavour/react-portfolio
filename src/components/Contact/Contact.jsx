@@ -7,7 +7,7 @@ const Contact = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <section className="enquiry">
+    <section className="enquiry" id="contact">
       <div className="container">
         <div className="d-flex align-items-center justify-content-center enquire">
           <div>

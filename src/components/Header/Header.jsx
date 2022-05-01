@@ -27,10 +27,10 @@ const Header = () => {
                         className="ms-auto my-2 my-lg-0"
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">About</Nav.Link>
-                        <Nav.Link href="#action2">Portfolio</Nav.Link>
-                        <Nav.Link href="#action2">Contact</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/#about">About</Nav.Link>
+                        <Nav.Link href="/#portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="/#contact">Contact</Nav.Link>
                         <li className="nav-item">
                             <Link className="nav-link btn view-project-btn hire-btn" to="#">Hire Me</Link>
                         </li>

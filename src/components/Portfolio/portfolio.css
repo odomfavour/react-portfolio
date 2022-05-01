@@ -192,6 +192,11 @@
     color: #fff;
     padding: .8rem 2rem;
     border: none;
+    text-decoration: none;
+}
+
+.view-project-btn:hover {
+    color: #fff;
 }
 
 .bounce {
