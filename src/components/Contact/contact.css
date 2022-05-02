@@ -1,11 +1,42 @@
 .enquiry {
-    background: linear-gradient(#000000c9, #000000c7), url(../../images/enquiry-bg.jpg) no-repeat center center;
-    background-size: cover;
-    height: 400px;
-    text-align: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.enquiry .container {
+    position: relative;
+    z-index: 2;
+}
+
+.enquiry::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 40%;
+    background: #d78e02;
+    z-index: -1;
+}
+
+.contact-option .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(220,150,90,.1);
+    color: #d78e02;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
 }
 
 .enquire {
     height: 400px;
-    color: #fff; 
+    color: #fff;
+}
+
+.contact-form {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    border-radius: 10px;
 }

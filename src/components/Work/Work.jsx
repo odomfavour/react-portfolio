@@ -1,5 +1,4 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
 import novel from '../../images/books.jpg'
 import './work.css'
 
