@@ -13,13 +13,13 @@ const Testimonials = () => {
         <section className='testimony-section'>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-lg-3 col-md-5">
                         <div className="mt-5">
                             <p className='mb-3'>Testmonials</p>
                             <h2>What my clients say</h2>
                         </div>
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-lg-9 col-md-7">
                         <Swiper
                             modules={[Autoplay, Navigation]}
                             spaceBetween={15}
@@ -36,8 +36,8 @@ const Testimonials = () => {
                                     spaceBetweenSlides: 10
                                 },
                                 // when window width is <= 999px
-                                768: {
-                                    slidesPerView: 2,
+                                769: {
+                                    slidesPerView: 1,
                                     spaceBetweenSlides: 10
                                 },
                                 999: {

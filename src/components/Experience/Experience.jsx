@@ -8,9 +8,9 @@ const Experience = () => {
         <h5 className='text-white'>Skill Experience</h5>
         <div className="my-5">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-lg-8 col-md-7">
               <div className="row">
-                <div className="col-md-3 col-6 mb-3">
+                <div className=" col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaHtml5 className='skill-icon html' />
@@ -18,7 +18,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaCss3Alt className='skill-icon css' />
@@ -26,7 +26,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaJsSquare className='skill-icon js' />
@@ -34,7 +34,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaBootstrap className='skill-icon bootstrap' />
@@ -42,7 +42,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaReact className='skill-icon react' />
@@ -50,7 +50,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6  mb-3">
+                <div className="col-lg-3 col-md-4 col-6  mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaVuejs className='skill-icon vue' />
@@ -58,7 +58,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaGithubAlt className='skill-icon git' />
@@ -66,7 +66,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-6 mb-3">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
                   <div className="text-center skill-box">
                     <div>
                       <FaNodeJs className='skill-icon nodejs' />
@@ -76,7 +76,7 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4 col-md-5 d-flex align-items-center justify-content-center">
               <img src={skillGuy} alt="" className='img-fluid bounce' />
             </div>
           </div>

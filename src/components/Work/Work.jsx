@@ -9,12 +9,12 @@ const Work = () => {
                 <p>Interests</p>
                 <h5 className='mb-5'>When I am  not Coding, I enjoy writing</h5>
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-lg-5 col-md-6 mb-3">
                         <div className="book-show mb-5">
                             <img src={novel} alt="" className='img-fluid book-pic' />
                         </div>
                     </div>
-                    <div className="col-md-7 d-flex align-items-center">
+                    <div className="col-lg-7 col-md-5 d-flex align-items-center mb-3">
                         <div>
                             <h3>Do you have Interest in Books? Would you love a good read?</h3>
                             <a href="/books" className="btn btn-primary">See Books</a>

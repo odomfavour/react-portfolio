@@ -12,11 +12,11 @@ const Contact = () => {
     <section className="enquiry" id="contact">
       <div className="container">
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-lg-7 col-md-6 mb-3">
             <div className="contact-form bg-white p-3">
               <h4 className='my-3'>Contact Me</h4>
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-lg-8 col-12 mb-3">
                   <form>
                     <div className="row">
                       <div className="col-md-6">
@@ -47,14 +47,14 @@ const Contact = () => {
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 d-none d-lg-block mb-3">
                   <img src={enquire} alt="" className='img-fluid' />
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-1"></div>
-          <div className="col-md-4">
+          <div className="col-lg-1 d-lg-block d-md-none mb-3"></div>
+          <div className="col-lg-4 col-md-6 mb-3">
             <h3 className='my-3'> Get In touch</h3>
             <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
             <div className="contact-options">

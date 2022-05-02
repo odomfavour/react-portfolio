@@ -63,3 +63,14 @@
         -webkit-text-stroke: 1px #fff;
     }
 }
+
+@media (max-width: 768px) {
+    .dev-info h1 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .dev-info {
+        padding-left: 40px;
+    }
+}

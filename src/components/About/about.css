@@ -7,13 +7,17 @@ body {
   }
 
 #about .about-card {
-    background: lightblue;
+    background: #d7bf92;
     height: 100px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.count {
+    font-size: 40px;
 }
 
 .dev-small-image {

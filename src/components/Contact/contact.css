@@ -40,3 +40,11 @@
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .enquiry::after {
+        width: 100%;
+        background: #fff;
+    }
+    
+}
