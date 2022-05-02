@@ -11,7 +11,7 @@ const Projects = () => {
                         <h3 className='mb-5 text-center'>Projects</h3>
                         <div className="row">
                         {projects.map((item) => (
-                            <div className="col-md-4 mb-4" key={item.id}>
+                            <div className="col-lg-4 col-md-6 mb-4" key={item.id}>
                                 <div className={`portfolio-container portfolio-container-${item.id}`}>
                                     <div class="profile-wrapper">
                                         <div class="profile-card d-flex align-items-center justify-content-center px-4 flex-column">

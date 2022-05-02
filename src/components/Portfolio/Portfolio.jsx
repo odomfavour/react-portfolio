@@ -134,7 +134,7 @@ const Portfolio = () => {
                         ))}
                     </div>
                     <div className="d-flex my-3 justify-content-end">
-                        <button className="btn btn-primary">See more</button>
+                        <a href='/projects' className="btn btn-primary">See more</a>
                     </div>
                     <SmallModal show={show} handleClose={handleClose} />
                 </div>
