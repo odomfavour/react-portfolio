@@ -8,7 +8,7 @@ import { projects } from './portfolioData';
 const Portfolio = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    // const handleShow = () => setShow(true);
     return (
         <section className='portfolio' id="portfolio">
             <div className="container">
