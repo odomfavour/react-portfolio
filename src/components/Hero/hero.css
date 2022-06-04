@@ -4,7 +4,7 @@
 }
 
 .developer-background {
-    clip-path: polygon(0 100%,21% 0,100% 0,100% 100%);
+    clip-path: polygon(0 100%, 21% 0, 100% 0, 100% 100%);
     /* position: absolute;
     right: 0;
     top: 0;
@@ -32,6 +32,19 @@
     -webkit-text-stroke: 1px #000;
 }
 
+
+
+@media (max-width: 768px) {
+    .dev-info h1 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .dev-info {
+        padding-left: 40px;
+    }
+}
+
 @media (max-width: 428px) {
     .dev-info {
         padding-left: 15px;
@@ -51,7 +64,7 @@
         background: linear-gradient(45deg, #00000073, #00000073);
         color: #fff;
         opacity: .9;
-        
+
     }
 
     .developer-background {
@@ -61,16 +74,5 @@
 
     .dev-info h1 span {
         -webkit-text-stroke: 1px #fff;
-    }
-}
-
-@media (max-width: 768px) {
-    .dev-info h1 {
-        font-size: 50px;
-        font-weight: 900;
-    }
-
-    .dev-info {
-        padding-left: 40px;
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import novel from '../../images/books.jpg'
 import './work.css'
-
+import { Link } from 'react-router-dom';
 const Work = () => {
     return (
         <section className='work-section'>
@@ -17,7 +17,7 @@ const Work = () => {
                     <div className="col-lg-7 col-md-5 d-flex align-items-center mb-3">
                         <div>
                             <h3>Do you have Interest in Books? Would you love a good read?</h3>
-                            <a href="/books" className="btn btn-primary">See Books</a>
+                            <Link to="/books" className="btn btn-primary">See Books</Link>
                         </div>
                     </div>
                 </div>

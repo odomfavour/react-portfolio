@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SmallModal from '../SmallModal/SmallModal';
 import './portfolio.css'
 import { projects } from './portfolioData';
+import { Link } from 'react-router-dom';
 // import girl from '../../images/girly.jpg'
 
 
@@ -134,7 +135,7 @@ const Portfolio = () => {
                         ))}
                     </div>
                     <div className="d-flex my-3 justify-content-end">
-                        <a href='/projects' className="btn btn-primary">See more</a>
+                        <Link to='/projects' className="btn btn-primary">See more</Link>
                     </div>
                     <SmallModal show={show} handleClose={handleClose} />
                 </div>

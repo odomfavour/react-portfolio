@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css'
 import ogo from '../../images/ogo1.png'
+import ogoresume from './ogochukwu-odom-resume.pdf'
 
 const About = () => {
     return (
@@ -48,9 +49,9 @@ const About = () => {
                                 I'm a creative Web Developer who is passionate and dedicated to my work. I have over 3 years experience as a professional web developer and I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion, ideation and collaboration.</p>
                                 <p>I code and create web applications for amazing people around the world. I work with Vue, Nuxt, Graphql, Node JS, JavaScript, Bootstrap, Tailwind.</p>
                                 <p>Give a call if you need something done.</p>
-                            <button className="view-project-btn mt-3">
+                            <a href={ogoresume} download className="view-project-btn mt-3">
                                 Download CV
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
