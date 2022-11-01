@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <Navbar expand="lg" fixed="top"  className={colorChange ? 'topbar_inner' : ''}>
             <Container>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="/">
                     <div className="d-flex align-items-center"><span className='mb-1'><FaFirstOrderAlt/></span>G<span className='mb-1'><FaFirstOrderAlt/></span></div>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

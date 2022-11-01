@@ -28,7 +28,7 @@
     transform: scale(1.1);
     overflow: hidden;
 }
-
+/* 
 .portfolio .portfolio-box .portfolio-info {
     width: 100%;
     height: auto;
@@ -45,7 +45,7 @@
 
 .portfolio .portfolio-box:hover .portfolio-info {
     transform: translateY(0);
-}
+} */
 
 .portfolio-container {
     height: 400px;
@@ -56,10 +56,31 @@
     transition: all 1s ease;
 }
 
-.portfolio-container:hover {
-    cursor: pointer;
+.portfolio-container::before {
+    content: "";
+    background: rgba(0, 8, 13, 0.945);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
 }
 
+.portfolio-container:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+ .portfolio-container:hover {
+    cursor: pointer;
+}
+/*
 .portfolio-container:hover::before {
     opacity: 0;
     transition: all 0.5s ease;
@@ -79,64 +100,121 @@
     background-size: cover;
     object-fit: cover;
     background-color: #0f0d16;
-}
+} */
 
-.portfolio-container-1::before {
+.portfolio-container-1{
+    background-image: url(../../images/projects/cyphercrescent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.portfolio-container-2{
+    background-image: url(../../images/projects/mc-holly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.portfolio-container-3{
     background-image: url(../../images/pexels-clone-test.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
 
-.portfolio-container-2::before {
+.portfolio-container-4 {
     background-image: url(../../images/delta7.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
 
-.portfolio-container-3::before {
+.portfolio-container-5 {
     background-image: url(../../images/unsplash-gallery-vue.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
-.portfolio-container-4::before {
+.portfolio-container-6 {
     background-image: url(../../images/untitled-ui-nuxt.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
-.portfolio-container-5::before {
+.portfolio-container-7 {
     background-image: url(../../images/country-search-challenge.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
-.portfolio-container-6::before {
+.portfolio-container-8 {
     background-image: url(../../images/silver-lining.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
 }
 
-.profile-wrapper {
+.profile-card::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+.profile-card::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+.profile-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; */
+    top: 0;
+    opacity: 0;
+    padding: 30px;
+    z-index: 3;
+    color: #fff;
+}
+
+.portfolio-wrapper:hover .profile-card {
+   opacity: 1;
+}
+
+/* .profile-wrapper {
     width: 100%;
     height: 100%;
     position: relative;
-}
+} */
 
-.portfolio-container:hover .profile-wrapper::before {
+/* .portfolio-container:hover .profile-wrapper::before {
     transform: skew(60deg) translateX(-125%);
     background: linear-gradient(90deg,#bb47d4 0,#2371ae);
-}
+} */
 
 /* .portfolio-container .profile-wrapper:hover::before {
     transform: skew(60deg) translateX(125%);
     background: linear-gradient(90deg,#bb47d4 0,#2371ae);
 } */
 
-.profile-wrapper::before {
+/* .profile-wrapper::before {
     content: "";
     position: absolute;
     top: 0;
@@ -147,9 +225,9 @@
     transition: all .6s ease;
     background: linear-gradient(90deg,#2371ae 0,#bb47d4);
     transform: skew(51deg) translateX(125%);
-}
+} */
 
-.profile-wrapper::after {
+/* .profile-wrapper::after {
     content: "";
     position: absolute;
     top: 0;
@@ -160,7 +238,7 @@
     transition: all .6s ease;
     background: linear-gradient(90deg,#2371ae 0,#bb47d4);
     transform: skew(51deg) translateX(-125%);
-}
+} */
 
 /* .portfolio-container:hover .profile-wrapper:hover::after {
     transform: skew(60deg) translateX(125%);
