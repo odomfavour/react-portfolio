@@ -1,5 +1,5 @@
 import React from 'react';
-import novel from '../../images/books.jpg'
+import novel from '../../images/webp/books.webp'
 import './work.css'
 import { Link } from 'react-router-dom';
 const Work = () => {

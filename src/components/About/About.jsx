@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ogo from "../../images/ogo1.png";
+import ogo from "../../images/webp/ogo1.webp";
 import ogoresume from "./ogochukwu-odom-resume.pdf";
 
 const About = () => {

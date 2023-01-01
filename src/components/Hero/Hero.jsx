@@ -1,6 +1,6 @@
 import React from 'react';
 import './hero.css'
-import ogo from '../../images/ogo-coat-10.png'
+import ogo from '../../images/webp/ogo-coat-10.webp'
 
 const Hero = () => {
     return (

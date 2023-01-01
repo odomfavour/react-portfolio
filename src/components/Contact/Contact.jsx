@@ -1,6 +1,6 @@
 import React from 'react'
 // import LargeModal from '../LargeModal/LargeModal'
-import enquire from '../../images/question-mark.jpg'
+import enquire from '../../images/webp/question-mark.webp'
 import {FaMapMarkerAlt, FaEnvelope, FaMobileAlt} from 'react-icons/fa'
 import './contact.css'
 const Contact = () => {

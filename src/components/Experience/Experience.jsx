@@ -1,5 +1,5 @@
 import React from 'react';
-import skillGuy from '../../images/skill-1.png'
+import skillGuy from '../../images/webp/skill-1.webp'
 import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaVuejs, FaJsSquare, FaGithubAlt, FaNodeJs } from 'react-icons/fa';
 const Experience = () => {
   return (
